@@ -1,4 +1,4 @@
-```bash
+```
 *****************************************************************
 *                                                               *
 *    ██╗     ██╗███╗   ██╗ █████╗ ██╗   ██╗██████╗ ██╗████████╗ *
@@ -9,84 +9,90 @@
 *    ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝   ╚═╝    *
 *                                                               *
 *****************************************************************
+```
 
+# LinAudit
 
-Here's a comprehensive list of information that you can gather from a Linux OS during an audit or security review:
+LinAudit is a comprehensive auditing tool designed to systematically gather detailed information from Linux operating systems, aiding in security reviews, compliance checks, and system audits.
 
-### System Information:
-1. OS Distribution (Name, version, kernel version)
-2. Hostname and FQDN
-3. Uptime and reboot history
-4. System architecture (32-bit/64-bit)
+---
 
-### Hardware Information:
-5. CPU details (model, cores, usage)
-6. RAM details (total, used, available)
-7. Storage details (disk partitions, usage, filesystem types)
-8. Swap space details
-9. Network interfaces (IP, MAC address, subnet mask)
-10. Device drivers and firmware versions
+## Information Collected
 
-### User & Account Information:
-11. List of users (local and system)
-12. Password policies (expiration, complexity)
-13. User group memberships
-14. Privileged accounts (root, sudo users)
-15. Last login details (time, IP address, terminal used)
-16. Currently logged-in users
+### System Information
+- OS distribution, kernel version, and architecture
+- Hostname and Fully Qualified Domain Name (FQDN)
+- System uptime and reboot history
 
-### Security Configurations:
-17. Firewall status and rules (iptables/firewalld/ufw)
-18. SELinux/AppArmor status and configurations
-19. Open ports and listening services
-20. SSH configurations (key-based authentication, permitted users, encryption algorithms)
-21. PAM (Pluggable Authentication Modules) configurations
+### Hardware Information
+- CPU details (model, cores, usage)
+- RAM details (total, used, available)
+- Storage details (disk partitions, usage, filesystem types)
+- Swap space details
+- Network interfaces (IP addresses, MAC addresses, subnet masks)
+- Device drivers and firmware versions
 
-### Installed Software:
-22. Installed packages (including versions)
-23. Software repositories configured
-24. Package update status and pending updates
-25. Antivirus software status (if installed)
-26. Installed compilers/interpreters (gcc, perl, python, ruby, etc.)
+### User & Account Information
+- List of local and system users
+- Password policies (expiration, complexity)
+- User group memberships
+- Privileged accounts (root, sudo users)
+- Last login details (time, IP address, terminal used)
+- Currently logged-in users
 
-### Process & Service Information:
-27. Currently running processes
-28. Scheduled cron jobs and cron permissions
-29. Startup scripts/services (systemd, init scripts)
-30. Active service statuses and configurations
+### Security Configurations
+- Firewall status and rules (iptables/firewalld/ufw)
+- SELinux/AppArmor status
+- Open ports and listening services
+- SSH configurations (authentication methods, permitted users, encryption algorithms)
+- PAM (Pluggable Authentication Modules) configurations
 
-### Network Information:
-31. Routing tables and network gateways
-32. DNS configuration and resolvers
-33. ARP tables and neighbor discovery information
-34. Proxy configurations
+### Installed Software
+- Installed packages with versions
+- Configured software repositories and updates
+- Antivirus software status
+- Installed compilers/interpreters (gcc, perl, python, ruby)
 
-### Logging & Monitoring:
-35. System log files (syslog, auth.log, secure, messages, kern.log)
-36. Log rotation policies and configurations
-37. Central logging (Syslog/rsyslog, log forwarding configuration)
-38. Monitoring tools installed (Nagios, Zabbix, Prometheus, etc.)
+### Process & Service Information
+- Running processes
+- Scheduled cron jobs and their permissions
+- Startup scripts and active services (systemd, init scripts)
 
-### File System Information:
-39. File permissions and ownership for critical files/directories
-40. SUID/SGID executables
-41. World-writable files and directories
-42. Integrity checking (AIDE, Tripwire, etc.)
+### Network Information
+- Routing tables and network gateways
+- DNS configurations
+- ARP tables and neighbor discovery details
+- Proxy settings
 
-### Configuration Information:
-43. Critical configuration files (`/etc/passwd`, `/etc/shadow`, `/etc/hosts`, `/etc/fstab`, `/etc/sudoers`)
-44. Environment variables
-45. Host-based IDS/IPS configurations (Fail2ban, OSSEC)
-46. Containers or virtualization status (Docker, Kubernetes, LXC)
+### Logging & Monitoring
+- System log files and locations
+- Log rotation policies
+- Centralized logging (Syslog, rsyslog)
+- Installed monitoring tools (Nagios, Zabbix, Prometheus)
 
-### Backup and Recovery:
-47. Backup configurations and schedules
-48. Disaster recovery plans
-49. Snapshot or system restore availability
+### File System Information
+- Permissions and ownership of critical files/directories
+- SUID/SGID executables
+- World-writable files/directories
+- File integrity check tools (AIDE, Tripwire)
 
-### Vulnerability Assessment:
-50. Known vulnerabilities (CVE) for installed packages
-51. Kernel vulnerabilities and patches applied
-52. Configuration security baseline compliance (e.g., CIS benchmarks)
+### Configuration Information
+- Critical configuration files permissions (`passwd`, `shadow`, `hosts`, `fstab`, `sudoers`)
+- Environment variables
+- IDS/IPS configurations (Fail2ban, OSSEC)
+- Containers/virtualization status (Docker, Kubernetes, LXC)
 
-Collecting this information systematically helps perform thorough audits, compliance checks, and security assessments on Linux systems.
+### Backup and Recovery
+- Backup configurations and schedules
+- Availability of disaster recovery plans
+
+### Vulnerability Assessment
+- Known vulnerabilities (CVE) for installed software
+- Kernel vulnerabilities and patches applied
+- Compliance with security baseline (e.g., CIS benchmarks)
+
+---
+
+## Purpose
+LinAudit ensures structured, comprehensive, and efficient system auditing, supporting administrators, auditors, and security professionals in maintaining secure and compliant Linux environments.
+
