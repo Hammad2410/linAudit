@@ -1,0 +1,1 @@
+This shell script divides different sections into sub-parts based on a character threshold, which can be defined or changed in the script. This process helps create multiple JSON files that will be used for further LLM analytics.
