@@ -1,0 +1,5 @@
+python-dotenv>=0.21.0
+streamlit>=1.20.0
+fpdf>=1.7.2
+langchain_groq>=0.1.0
+langchain>=0.0.148
