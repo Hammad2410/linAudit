@@ -11,6 +11,10 @@
 *****************************************************************
 ```
 
+# AI-Analysis
+
+The Project will cover up LLM-utilization, so that System outputs should be converted into AI-based Reports
+
 # LinAudit
 
 LinAudit is a comprehensive auditing tool designed to systematically gather detailed information from Linux operating systems, aiding in security reviews, compliance checks, and system audits.
